@@ -1,0 +1,30 @@
+$pinkred: #F8395A;
+$blue: #24355A;
+$lightgrey: #d5d9e0;
+$grey: #d5d9e0;
+$darkgrey: #24355A;
+
+
+@mixin shadow {
+  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+@mixin buttonStyle {
+  padding: 10px 15px;
+  background-color: $pinkred;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #d5d9e0;
+  border-radius: 10px;
+}
+
+:export {
+  pinkred: $pinkred;
+  blue: $blue;
+  lightgrey: $lightgrey;
+  grey: $grey;
+  darkgrey: $darkgrey;
+}
